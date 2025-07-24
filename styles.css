@@ -21,6 +21,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -250,6 +251,66 @@ body {
     border: none;
 }
 
+/* chalange flower lover section starts chalange part */
+
+.lover-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.lover-image-1 {
+    width: 100%;
+    height: 100%;
+}
+
+.lover-image {
+    position: relative;
+}
+
+.lover-image-2 {
+    width: 286px;
+    height: 286px;
+    position: absolute;
+    margin-top: -130px;
+    margin-left: 345px;
+    /* padding-left: 0px;
+    padding-top: 0px;
+    padding-right: 200px; */
+
+}
+
+.lover-section {
+    display: flex;
+    flex-direction: column;
+    justify-items: auto;
+    gap: 20px;
+    max-width: 540px;
+    margin: 38px 0px 38px 60px;
+}
+
+.lover-some h3 {
+    margin: 0px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
+
+
+.lover-subcontainer li {
+    font-size: 22px;
+    color: #8987A1;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+.lover-subcontainer {
+    padding: 25px;
+}
+
+
+
 
 /* @media queary starts */
 
@@ -289,9 +350,40 @@ body {
     /* main section starts */
     .our-plan-container {
         grid-template-columns: repeat(2, 1fr);
+        padding-left: 14px;
+        padding-right: 17px;
+        margin-bottom: 40px;
     }
 
     .plan-text {
         max-width: 100%;
     }
+
+    /* chalange section */
+    .lover-container {
+        flex-direction: column;
+    }
+
+    .lover-section {
+        flex-direction: column;
+        gap: 20px;
+        max-width: 100%;
+        margin: 18px auto;
+    }
+
+    .hide-5 {
+        display: none;
+    }
+
+    .lover-some h3 {
+        font-size: 24px;
+    }
+
+    .lover-subcontainer li {
+        font-size: 14px;
+
+    }
+
+
+
 }
