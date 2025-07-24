@@ -309,6 +309,162 @@ body {
     padding: 25px;
 }
 
+/* deals section starts */
+
+.deals-head {
+    max-width: 1140px;
+    margin: 0 auto;
+    margin-bottom: 154px;
+}
+
+.deals-tittle {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    color: #E95A08;
+}
+
+.deals-tittle span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
+
+.deals-text {
+    margin: 0 auto;
+    width: 77%;
+    text-align: center;
+    font-size: 22px;
+    color: #8987A1;
+
+}
+
+/* layout section starts */
+.bloom-plant {}
+
+.layout-section {
+    margin: 0 auto;
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+    grid-template-areas:
+        "bloom   zabo   zabo"
+        "ant     zabo   zabo"
+    ;
+    gap: 28px;
+}
+
+.bloom-plant {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    background-image: url(./assets/deal-bloom.png);
+    background-repeat: no-repeat;
+    grid-area: bloom;
+    width: 367px;
+    height: 201px;
+
+}
+
+.ant-plant {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    background-image: url(./assets/deal-ana.png);
+    background-repeat: no-repeat;
+    grid-area: ant;
+    width: 367px;
+    height: 201px;
+}
+
+.zabo-plant {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+
+    background-image: url(./assets/deal-zabo.png);
+    background-repeat: no-repeat;
+    grid-area: zabo;
+    width: 753px;
+    height: 424px;
+}
+
+.layout-text {
+
+    font-size: 30px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.layout-text-1 {
+    font-size: 40px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.layout-button {
+    font-weight: 600px;
+    color: #FFFFFF;
+    border: none;
+    background-color: none;
+    text-decoration: underline;
+}
+
+/* join section starts */
+
+.join-subcontainer {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    gap: 2px;
+}
+
+.join-container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    background-image: url(./assets/news-letter-bg.png);
+    width: 100%;
+    height: 535px;
+    margin-top: 110px;
+    margin-bottom: 10px;
+}
+
+.join-container h3 {
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.join-subcontainer input {
+    width: 50%;
+    height: 50px;
+    color: #8987A1;
+    padding-left: 25px;
+}
+
+.join-subcontainer button {
+    width: 20%;
+    height: 50px;
+    font-weight: 600px;
+    color: #FFFFFF;
+    background-color: #E95A08;
+    padding: 19px 54px;
+    border: none;
+}
 
 
 
@@ -375,15 +531,88 @@ body {
         display: none;
     }
 
-    .lover-some h3 {
+    .deals-head {
+        max-width: 100%;
+    }
+
+    .lover-some h3,
+    .deals-tittle,
+    .deals-tittle span {
         font-size: 24px;
     }
 
-    .lover-subcontainer li {
+    .lover-subcontainer li,
+    .deals-text {
         font-size: 14px;
 
     }
 
+    .deals-text {
+        margin-top: 16px;
+        width: 85%;
+    }
 
+    /* 
+    .layout-section {
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .layout-section {
+        grid-template-areas:
+            "bloom"
+            "ant"
+            "zabo"
+        ;
+        gap: 40px;
+    }
+
+    .bloom-plant {
+        width: 200%;
+        height: 200%;
+    }
+
+    .ant-plant {
+        width: 200%;
+        height: 100%;
+    }
+
+    .zabo-plant {
+        width: 200%;
+        height: 300%;
+    }
+
+    .layout-text {
+
+        font-size: 15px;
+    }
+
+    .layout-text-1 {
+        font-size: 20px;
+    } */
+
+
+    /* join section starts */
+
+    .join-container h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .join-container {
+        height: 275px;
+
+    }
+
+    .join-containe input {
+        width: 150%;
+    }
+
+    .join-container button {
+        padding: 19px 20px;
+        width: 40%;
+    }
 
 }
