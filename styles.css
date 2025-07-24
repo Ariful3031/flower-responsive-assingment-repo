@@ -169,10 +169,86 @@ body {
     color: rgba(0, 0, 0, 0.5);
     margin-top: 13px;
     margin-bottom: 0px;
+}
+
+/* main section starts */
+
+.plan-container {
+    text-align: center;
+    margin: auto;
+    margin-bottom: 49px;
+}
+
+.plan-tittle {
+    font-size: 50px;
+    font-weight: bold;
+    color: #E95A08;
+    margin-bottom: 16px;
 
 }
 
+.plan-tittle span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000000;
+}
 
+.plan-text {
+    max-width: 62%;
+    margin: auto;
+    margin-top: 16px;
+    font-size: 22px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+/* our plan container card starts */
+.our-plan-container {
+    max-width: 1140px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 210px;
+}
+
+.our-plan-container-card {
+    width: 270px;
+    height: auto;
+}
+
+.card-img {
+    width: 100%;
+    height: auto;
+}
+
+.card-little {
+    font-weight: 500px;
+    text-align: center;
+    line-height: 150%;
+    color: #111111;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.card-price {
+    font-weight: bold;
+    text-align: center;
+    line-height: 150%;
+    color: #111111;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.card-add-button {
+    width: 100%;
+    background-color: #E95A08;
+    padding: 19px;
+    text-align: center;
+    font-weight: 600px;
+    color: #ffffff;
+    margin-bottom: 0px;
+    border: none;
+}
 
 
 /* @media queary starts */
@@ -208,5 +284,14 @@ body {
     .banner-subcontainer p {
         font-size: 14px;
         margin-top: 13px;
+    }
+
+    /* main section starts */
+    .our-plan-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .plan-text {
+        max-width: 100%;
     }
 }
